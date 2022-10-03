@@ -42,6 +42,8 @@ skipTest = ""
 environment = 'eb2Template'
 
 
+test = 0
+
 def infoWindow(title, message):
     root = Tk()
     root.withdraw()
