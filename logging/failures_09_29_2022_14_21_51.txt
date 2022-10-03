@@ -1,0 +1,27 @@
+<class 'selenium.common.exceptions.NoSuchElementException'>Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),"0003")]"}
+  (Session info: chrome=106.0.5249.61)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x004DDF13+2219795]
+	Ordinal0 [0x00472841+1779777]
+	Ordinal0 [0x0038423D+803389]
+	Ordinal0 [0x003B3025+995365]
+	Ordinal0 [0x003B31EB+995819]
+	Ordinal0 [0x003E0F52+1183570]
+	Ordinal0 [0x003CE844+1108036]
+	Ordinal0 [0x003DF192+1175954]
+	Ordinal0 [0x003CE616+1107478]
+	Ordinal0 [0x003A7F89+950153]
+	Ordinal0 [0x003A8F56+954198]
+	GetHandleVerifier [0x007D2CB2+3040210]
+	GetHandleVerifier [0x007C2BB4+2974420]
+	GetHandleVerifier [0x00576A0A+565546]
+	GetHandleVerifier [0x00575680+560544]
+	Ordinal0 [0x00479A5C+1808988]
+	Ordinal0 [0x0047E3A8+1827752]
+	Ordinal0 [0x0047E495+1827989]
+	Ordinal0 [0x004880A4+1867940]
+	BaseThreadInitThunk [0x73858494+36]
+	RtlAreBitsSet [0x76FC41C8+136]
+	RtlAreBitsSet [0x76FC4198+88]
+<traceback object at 0x0000023AEFC3AC80>

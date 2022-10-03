@@ -1,0 +1,7 @@
+09 29 2022  :: eb2Template environment selected.
+09 29 2022  :: Current Version of EB2: version P1.00.0291
+09 29 2022  :: Template creation beginning.
+09 29 2022  :: Clicked on 'Create Template'
+09 29 2022  :: Opened to flash format page.
+09 29 2022  :: Add new template
+09 29 2022  :: Selected CS.00100

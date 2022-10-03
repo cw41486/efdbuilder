@@ -1,0 +1,346 @@
+09 29 2022  :: eb2Template environment selected.
+09 29 2022  :: Current Version of EB2: version P1.00.0291
+09 29 2022  :: Template creation beginning.
+09 29 2022  :: Clicked on 'Create Template'
+09 29 2022  :: Opened to flash format page.
+09 29 2022  :: Add new template
+09 29 2022  :: Selected CS.00100
+09 29 2022  :: CAN IDs successfully added.
+09 29 2022  :: Bus/Protocol Info successfully added.
+09 29 2022  :: Protocol type successfully added.
+09 29 2022  :: Process type successfully added.
+09 29 2022  :: Whole Flash checksum successfully added.
+09 29 2022  :: More than one block detected
+09 29 2022  :: 5
+09 29 2022  :: LB types added successfully.
+09 29 2022  :: Compression modes added successfully.
+09 29 2022  :: Encryption modes added successfully.
+09 29 2022  :: 5 Siganture objects detected.
+09 29 2022  :: Signature types added successfully.
+09 29 2022  :: 0 PKI tablets found.
+09 29 2022  :: found 0 PKI elements
+09 29 2022  :: LB Checksums added successfully.
+09 29 2022  :: LB address ranges added successfully.
+09 29 2022  :: 5 update control types found.
+09 29 2022  :: 5 stripped headers found.
+09 29 2022  :: Stripped header detected. for LB1
+09 29 2022  :: Successfully added header start address for LB1
+09 29 2022  :: Stripped header detected. for LB2
+09 29 2022  :: Successfully added header start address for LB2
+09 29 2022  :: Stripped header detected. for LB3
+09 29 2022  :: Successfully added header start address for LB3
+09 29 2022  :: Stripped header detected. for LB4
+09 29 2022  :: Successfully added header start address for LB4
+09 29 2022  :: Stripped header detected. for LB5
+09 29 2022  :: Successfully added header start address for LB5
+09 29 2022  :: 5 header lengths found.
+09 29 2022  :: Stripped header detected. for LB1
+09 29 2022  :: Successfully added header length 448 to LB1
+09 29 2022  :: Stripped header detected. for LB2
+09 29 2022  :: Successfully added header length 448 to LB2
+09 29 2022  :: Stripped header detected. for LB3
+09 29 2022  :: Successfully added header length 448 to LB3
+09 29 2022  :: Stripped header detected. for LB4
+09 29 2022  :: Successfully added header length 448 to LB4
+09 29 2022  :: Stripped header detected. for LB5
+09 29 2022  :: Successfully added header length 448 to LB5
+09 29 2022  :: Update control types added successfully.
+09 29 2022  :: 0 SWIL blocks found.
+09 29 2022  :: 0 SWIL checksums detected.
+09 29 2022  :: SWIL added successfully.
+09 29 2022  :: Adding new scripts
+09 29 2022  :: 1 add scripts found
+09 29 2022  :: Attempt to add scripts
+09 29 2022  :: Select Script
+09 29 2022  :: 1 select buttons found for Add scripts
+09 29 2022  :: Scriptypes selected.
+09 29 2022  :: 1 found for script select buttons.
+09 29 2022  :: Load script into the template
+09 29 2022  :: FMS_General_PreScript_DisplayWarningDevelopmentEcu.js Successfully loaded
+09 29 2022  :: All 'add Scripts' loaded.
+09 29 2022  :: Begin adding Replace Scripts
+09 29 2022  :: Clicked on 'Create Template'
+09 29 2022  :: Opened to flash format page.
+09 29 2022  :: Add new template
+09 29 2022  :: Selected KWP-2000
+09 29 2022  :: CAN IDs successfully added.
+09 29 2022  :: Bus/Protocol Info successfully added.
+09 29 2022  :: Protocol type successfully added.
+09 29 2022  :: Process type successfully added.
+09 29 2022  :: Whole Flash checksum successfully added.
+09 29 2022  :: More than one block detected
+09 29 2022  :: 3
+09 29 2022  :: LB types added successfully.
+09 29 2022  :: Compression modes added successfully.
+09 29 2022  :: Encryption modes added successfully.
+09 29 2022  :: 3 Siganture objects detected.
+09 29 2022  :: Signature types added successfully.
+09 29 2022  :: 2 PKI tablets found.
+09 29 2022  :: located PKI element, clicking now.
+09 29 2022  :: located PKI element, clicking now.
+09 29 2022  :: found 2 PKI elements
+09 29 2022  :: found 8 PKI fields
+09 29 2022  :: Skipping LB1 since PKI is not there.
+09 29 2022  :: Sending jumojcorD9dArdZRy to PKI setting productId for LB2
+09 29 2022  :: Sending FFFFFFFF to PKI setting ecuId for LB2
+09 29 2022  :: Sending FFFFFFFF to PKI setting projectId for LB2
+09 29 2022  :: Sending FFFFFFFF to PKI setting componentId for LB2
+09 29 2022  :: Sending ECM to PKI setting targetName for LB2
+09 29 2022  :: Sending FFFFFFFF to PKI setting compatabiltyId for LB2
+09 29 2022  :: Sending 0 to PKI setting rollbackId for LB2
+09 29 2022  :: Sending FFFFFFFF to PKI setting productIntent for LB2
+09 29 2022  :: found 8 PKI fields
+09 29 2022  :: Sending jumojcorD9dArdZRy to PKI setting productId for LB3
+09 29 2022  :: Sending FFFFFFFF to PKI setting ecuId for LB3
+09 29 2022  :: Sending FFFFFFFF to PKI setting projectId for LB3
+09 29 2022  :: Sending FFFFFFFF to PKI setting componentId for LB3
+09 29 2022  :: Sending ECM to PKI setting targetName for LB3
+09 29 2022  :: Sending FFFFFFFF to PKI setting compatabiltyId for LB3
+09 29 2022  :: Sending 0 to PKI setting rollbackId for LB3
+09 29 2022  :: Sending FFFFFFFF to PKI setting productIntent for LB3
+09 29 2022  :: LB Checksums added successfully.
+09 29 2022  :: LB address ranges added successfully.
+09 29 2022  :: 3 update control types found.
+09 29 2022  :: 3 stripped headers found.
+09 29 2022  :: Skipping LB1.  No stripped header data.
+09 29 2022  :: Skipping LB2.  No stripped header data.
+09 29 2022  :: Skipping LB3.  No stripped header data.
+09 29 2022  :: 3 header lengths found.
+09 29 2022  :: Skipping LB1.  No stripped header data.
+09 29 2022  :: Skipping LB2.  No stripped header data.
+09 29 2022  :: Skipping LB3.  No stripped header data.
+09 29 2022  :: Update control types added successfully.
+09 29 2022  :: 3 SWIL blocks found.
+09 29 2022  :: 3 SWIL checksums detected.
+09 29 2022  :: SWIL added successfully.
+09 29 2022  :: Adding new scripts
+09 29 2022  :: 1 add scripts found
+09 29 2022  :: Attempt to add scripts
+09 29 2022  :: Select Script
+09 29 2022  :: 1 select buttons found for Add scripts
+09 29 2022  :: Scriptypes selected.
+09 29 2022  :: 1 found for script select buttons.
+09 29 2022  :: Load script into the template
+09 29 2022  :: FMS_General_PreScript_DisplayWarningDevelopmentEcu.js Successfully loaded
+09 29 2022  :: All 'add Scripts' loaded.
+09 29 2022  :: Begin adding Replace Scripts
+09 29 2022  :: Clicked on 'Create Template'
+09 29 2022  :: Opened to flash format page.
+09 29 2022  :: Add new template
+09 29 2022  :: Selected CS.00051
+09 29 2022  :: CAN IDs successfully added.
+09 29 2022  :: Bus/Protocol Info successfully added.
+09 29 2022  :: Protocol type successfully added.
+09 29 2022  :: Process type successfully added.
+09 29 2022  :: Whole Flash checksum successfully added.
+09 29 2022  :: Adding new scripts
+09 29 2022  :: 1 add scripts found
+09 29 2022  :: Attempt to add scripts
+09 29 2022  :: Select Script
+09 29 2022  :: 1 select buttons found for Add scripts
+09 29 2022  :: Scriptypes selected.
+09 29 2022  :: 1 found for script select buttons.
+09 29 2022  :: Load script into the template
+09 29 2022  :: FMS_General_PreScript_DisplayWarningDevelopmentEcu.js Successfully loaded
+09 29 2022  :: All 'add Scripts' loaded.
+09 29 2022  :: Begin adding Replace Scripts
+09 29 2022  :: Clicked on 'Create Template'
+09 29 2022  :: Opened to flash format page.
+09 29 2022  :: Add new template
+09 29 2022  :: Selected CS.00051
+09 29 2022  :: CAN IDs successfully added.
+09 29 2022  :: Bus/Protocol Info successfully added.
+09 29 2022  :: Protocol type successfully added.
+09 29 2022  :: Process type successfully added.
+09 29 2022  :: Whole Flash checksum successfully added.
+09 29 2022  :: More than one block detected
+09 29 2022  :: 5
+09 29 2022  :: LB types added successfully.
+09 29 2022  :: Compression modes added successfully.
+09 29 2022  :: Encryption modes added successfully.
+09 29 2022  :: 5 Siganture objects detected.
+09 29 2022  :: Signature types added successfully.
+09 29 2022  :: 0 PKI tablets found.
+09 29 2022  :: found 0 PKI elements
+09 29 2022  :: LB Checksums added successfully.
+09 29 2022  :: LB address ranges added successfully.
+09 29 2022  :: 0 update control types found.
+09 29 2022  :: 0 stripped headers found.
+09 29 2022  :: 0 header lengths found.
+09 29 2022  :: Update control types added successfully.
+09 29 2022  :: 0 SWIL blocks found.
+09 29 2022  :: 0 SWIL checksums detected.
+09 29 2022  :: SWIL added successfully.
+09 29 2022  :: Adding new scripts
+09 29 2022  :: 1 add scripts found
+09 29 2022  :: Attempt to add scripts
+09 29 2022  :: Select Script
+09 29 2022  :: 1 select buttons found for Add scripts
+09 29 2022  :: Scriptypes selected.
+09 29 2022  :: 1 found for script select buttons.
+09 29 2022  :: Load script into the template
+09 29 2022  :: FMS_General_PreScript_DisplayWarningDevelopmentEcu.js Successfully loaded
+09 29 2022  :: All 'add Scripts' loaded.
+09 29 2022  :: Begin adding Replace Scripts
+09 29 2022  :: Found 2 replace scripts.
+09 29 2022  :: Attempt to add 'Replace scripts'
+09 29 2022  :: Added another Replace script
+09 29 2022  :: Select Script
+09 29 2022  :: 2 replace items found.
+09 29 2022  :: Scriptypes selected.
+09 29 2022  :: 2 found for script select buttons.
+09 29 2022  :: Load script into the template
+09 29 2022  :: FMS_General_PreFlashProcessScript_OnlyDisableNormalBroadcastForCuswVehicles.jsSuccessfully loaded
+09 29 2022  :: FMS_General_PostFlashProcessScript_OnlyDisableNormalBroadcastForCuswVehicles.jsSuccessfully loaded
+09 29 2022  :: All 'Replace Scripts' loaded.
+09 29 2022  :: Clicked on 'Create Template'
+09 29 2022  :: Opened to flash format page.
+09 29 2022  :: Add new template
+09 29 2022  :: Selected KWP-2000
+09 29 2022  :: CAN IDs successfully added.
+09 29 2022  :: Bus/Protocol Info successfully added.
+09 29 2022  :: Protocol type successfully added.
+09 29 2022  :: Process type successfully added.
+09 29 2022  :: Whole Flash checksum successfully added.
+09 29 2022  :: More than one block detected
+09 29 2022  :: 2
+09 29 2022  :: LB types added successfully.
+09 29 2022  :: Compression modes added successfully.
+09 29 2022  :: Encryption modes added successfully.
+09 29 2022  :: 2 Siganture objects detected.
+09 29 2022  :: Signature types added successfully.
+09 29 2022  :: 0 PKI tablets found.
+09 29 2022  :: found 0 PKI elements
+09 29 2022  :: LB Checksums added successfully.
+09 29 2022  :: LB address ranges added successfully.
+09 29 2022  :: 2 update control types found.
+09 29 2022  :: 2 stripped headers found.
+09 29 2022  :: Skipping LB1.  No stripped header data.
+09 29 2022  :: Skipping LB2.  No stripped header data.
+09 29 2022  :: 2 header lengths found.
+09 29 2022  :: Skipping LB1.  No stripped header data.
+09 29 2022  :: Skipping LB2.  No stripped header data.
+09 29 2022  :: Update control types added successfully.
+09 29 2022  :: 2 SWIL blocks found.
+09 29 2022  :: 2 SWIL checksums detected.
+09 29 2022  :: SWIL added successfully.
+09 29 2022  :: Adding new scripts
+09 29 2022  :: 1 add scripts found
+09 29 2022  :: Attempt to add scripts
+09 29 2022  :: Select Script
+09 29 2022  :: 1 select buttons found for Add scripts
+09 29 2022  :: Scriptypes selected.
+09 29 2022  :: 1 found for script select buttons.
+09 29 2022  :: Load script into the template
+09 29 2022  :: FMS_General_PreScript_DisplayWarningDevelopmentEcu.js Successfully loaded
+09 29 2022  :: All 'add Scripts' loaded.
+09 29 2022  :: Begin adding Replace Scripts
+09 29 2022  :: Found 2 replace scripts.
+09 29 2022  :: Attempt to add 'Replace scripts'
+09 29 2022  :: Added another Replace script
+09 29 2022  :: Select Script
+09 29 2022  :: 2 replace items found.
+09 29 2022  :: Scriptypes selected.
+09 29 2022  :: 2 found for script select buttons.
+09 29 2022  :: Load script into the template
+09 29 2022  :: FMS_General_PreFlashProcessScript_AlertUserCycleIgnitionAfterReset.jsSuccessfully loaded
+09 29 2022  :: FMS_General_PostFlashProcessScript_AlertUserCycleIgnitionAfterReset.jsSuccessfully loaded
+09 29 2022  :: All 'Replace Scripts' loaded.
+09 29 2022  :: Clicked on 'Create Template'
+09 29 2022  :: Opened to flash format page.
+09 29 2022  :: Add new template
+09 29 2022  :: Selected CS.00100
+09 29 2022  :: CAN IDs successfully added.
+09 29 2022  :: Bus/Protocol Info successfully added.
+09 29 2022  :: Protocol type successfully added.
+09 29 2022  :: Process type successfully added.
+09 29 2022  :: Whole Flash checksum successfully added.
+09 29 2022  :: More than one block detected
+09 29 2022  :: 30
+09 29 2022  :: LB types added successfully.
+09 29 2022  :: Compression modes added successfully.
+09 29 2022  :: Encryption modes added successfully.
+09 29 2022  :: 30 Siganture objects detected.
+09 29 2022  :: Signature types added successfully.
+09 29 2022  :: 0 PKI tablets found.
+09 29 2022  :: found 0 PKI elements
+09 29 2022  :: LB Checksums added successfully.
+09 29 2022  :: LB address ranges added successfully.
+09 29 2022  :: 30 update control types found.
+09 29 2022  :: 30 stripped headers found.
+09 29 2022  :: Skipping LB1.  No stripped header data.
+09 29 2022  :: Skipping LB2.  No stripped header data.
+09 29 2022  :: Skipping LB3.  No stripped header data.
+09 29 2022  :: Skipping LB4.  No stripped header data.
+09 29 2022  :: Skipping LB5.  No stripped header data.
+09 29 2022  :: Skipping LB6.  No stripped header data.
+09 29 2022  :: Skipping LB7.  No stripped header data.
+09 29 2022  :: Skipping LB8.  No stripped header data.
+09 29 2022  :: Skipping LB9.  No stripped header data.
+09 29 2022  :: Skipping LB10.  No stripped header data.
+09 29 2022  :: Skipping LB11.  No stripped header data.
+09 29 2022  :: Skipping LB12.  No stripped header data.
+09 29 2022  :: Skipping LB13.  No stripped header data.
+09 29 2022  :: Skipping LB14.  No stripped header data.
+09 29 2022  :: Skipping LB15.  No stripped header data.
+09 29 2022  :: Skipping LB16.  No stripped header data.
+09 29 2022  :: Skipping LB17.  No stripped header data.
+09 29 2022  :: Skipping LB18.  No stripped header data.
+09 29 2022  :: Skipping LB19.  No stripped header data.
+09 29 2022  :: Skipping LB20.  No stripped header data.
+09 29 2022  :: Skipping LB21.  No stripped header data.
+09 29 2022  :: Skipping LB22.  No stripped header data.
+09 29 2022  :: Skipping LB23.  No stripped header data.
+09 29 2022  :: Skipping LB24.  No stripped header data.
+09 29 2022  :: Skipping LB25.  No stripped header data.
+09 29 2022  :: Skipping LB26.  No stripped header data.
+09 29 2022  :: Skipping LB27.  No stripped header data.
+09 29 2022  :: Skipping LB28.  No stripped header data.
+09 29 2022  :: Skipping LB29.  No stripped header data.
+09 29 2022  :: Skipping LB30.  No stripped header data.
+09 29 2022  :: 30 header lengths found.
+09 29 2022  :: Skipping LB1.  No stripped header data.
+09 29 2022  :: Skipping LB2.  No stripped header data.
+09 29 2022  :: Skipping LB3.  No stripped header data.
+09 29 2022  :: Skipping LB4.  No stripped header data.
+09 29 2022  :: Skipping LB5.  No stripped header data.
+09 29 2022  :: Skipping LB6.  No stripped header data.
+09 29 2022  :: Skipping LB7.  No stripped header data.
+09 29 2022  :: Skipping LB8.  No stripped header data.
+09 29 2022  :: Skipping LB9.  No stripped header data.
+09 29 2022  :: Skipping LB10.  No stripped header data.
+09 29 2022  :: Skipping LB11.  No stripped header data.
+09 29 2022  :: Skipping LB12.  No stripped header data.
+09 29 2022  :: Skipping LB13.  No stripped header data.
+09 29 2022  :: Skipping LB14.  No stripped header data.
+09 29 2022  :: Skipping LB15.  No stripped header data.
+09 29 2022  :: Skipping LB16.  No stripped header data.
+09 29 2022  :: Skipping LB17.  No stripped header data.
+09 29 2022  :: Skipping LB18.  No stripped header data.
+09 29 2022  :: Skipping LB19.  No stripped header data.
+09 29 2022  :: Skipping LB20.  No stripped header data.
+09 29 2022  :: Skipping LB21.  No stripped header data.
+09 29 2022  :: Skipping LB22.  No stripped header data.
+09 29 2022  :: Skipping LB23.  No stripped header data.
+09 29 2022  :: Skipping LB24.  No stripped header data.
+09 29 2022  :: Skipping LB25.  No stripped header data.
+09 29 2022  :: Skipping LB26.  No stripped header data.
+09 29 2022  :: Skipping LB27.  No stripped header data.
+09 29 2022  :: Skipping LB28.  No stripped header data.
+09 29 2022  :: Skipping LB29.  No stripped header data.
+09 29 2022  :: Skipping LB30.  No stripped header data.
+09 29 2022  :: Update control types added successfully.
+09 29 2022  :: 30 SWIL blocks found.
+09 29 2022  :: 30 SWIL checksums detected.
+09 29 2022  :: SWIL added successfully.
+09 29 2022  :: Adding new scripts
+09 29 2022  :: 1 add scripts found
+09 29 2022  :: Attempt to add scripts
+09 29 2022  :: Select Script
+09 29 2022  :: 1 select buttons found for Add scripts
+09 29 2022  :: Scriptypes selected.
+09 29 2022  :: 1 found for script select buttons.
+09 29 2022  :: Load script into the template
+09 29 2022  :: FMS_General_PreScript_DisplayWarningDevelopmentEcu.js Successfully loaded
+09 29 2022  :: All 'add Scripts' loaded.
+09 29 2022  :: Begin adding Replace Scripts
