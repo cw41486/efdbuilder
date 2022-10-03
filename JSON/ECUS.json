@@ -1,0 +1,998 @@
+{
+	"ECU":[
+		{
+			"Name":"PAM",
+			"ID": "PAM",
+			"Variant":"0002",
+			"Supplier":"Bosch",
+			"SupplierID": "0003",
+			"Class":"EB2_Test",
+			"Unlock":"S1_PAM_Sup0003_Var0002_AlgID030D_V01.esu",
+			"SDD": "CS.00102",
+			"Template":{
+				"Req_ID":"18DAA0F1",
+				"Res_ID":"18DAF1A0",
+				"Alt_Req_ID":"18DAA0F2",
+				"Alt_Res_ID":"18DAF2A0",
+				"BusType":"CAN-FD-C 29bit",
+				"Protocol":"CS.00100",
+				"FlashProcess":"CS.00101 (NEXTGEN +2)",
+				"Checksum":"None",
+				"LogicalBlocks":[
+					{
+					"LB1":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"Stripped":true,
+						"SWIL": "None",
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"40000",
+							"Stop":"1A7FFF"
+						}
+						]
+					},
+					"LB2":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"Stripped": true,
+						"SWIL":"None",
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"1C0000",
+							"Stop":"ABFFFF"
+						}
+						]
+					},
+					"LB3":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"Stripped": true,
+						"SWIL":"None",
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"AC0000",
+							"Stop":"17BFFFF"
+						}
+						]
+					},
+					"LB4":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"Stripped": true,
+						"SWIL":"None",
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"17C0000",
+							"Stop":"19F7FFF"
+						}
+						]
+					},
+					"LB5":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"Stripped": true,
+						"SWIL":"None",
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"001D8000",
+							"Stop":"001FFFFF"
+						}
+						]
+					}
+				}
+				],
+				"Properties":"None",
+				"Add Scripts": [
+					{
+					"ScriptType": "Prescript",
+					"ScriptName": "FMS_General_PreScript_DisplayWarningDevelopmentEcu.js"
+					}
+				],
+				"Replace Scripts": "None",
+				"WholeFlashChecksum":"None"
+			}
+		},
+		{
+			"Name":"PCM",
+			"ID": "PCM",
+			"Variant":"7D",
+			"Supplier":"Delphi",
+			"SupplierID": "0040",
+			"Class":"EB2_Test",
+			"Unlock":"None",
+			"SDD": "KWP 2.3.2",
+			"Template":{
+				"Req_ID":"18DA10F1",
+				"Res_ID":"18DAF110",
+				"Alt_Req_ID":"",
+				"Alt_Res_ID":"",
+				"BusType":"CAN-FD-C 29bit",
+				"Protocol":"KWP-2000",
+				"FlashProcess":"Chrysler",
+				"Checksum":"None",
+				"LogicalBlocks":[
+					{
+					"LB1":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"N4SWIL01_PCM.s19",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"8C0000",
+							"Stop":"8FFFFF"
+						}
+						]
+					},
+					"LB2":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"Automatic (PKI World)",
+						"PKI Settings":{
+							"productId": "jumojcorD9dArdZRy",
+							"ecuId": "FFFFFFFF",
+							"projectId": "FFFFFFFF",
+							"componentId": "FFFFFFFF",
+							"targetName": "ECM",
+							"compatabiltyId": "FFFFFFFF",
+							"rollbackId": "0",
+							"productIntent": "FFFFFFFF"
+						},
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"N4SWIL01_PCM.s19",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"900000",
+							"Stop":"DFFFFF"
+						}
+						]
+					},
+					"LB3":{
+						"Type": "Data",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"Automatic (PKI World)",
+						"PKI Settings":{
+							"productId": "jumojcorD9dArdZRy",
+							"ecuId": "FFFFFFFF",
+							"projectId": "FFFFFFFF",
+							"componentId": "FFFFFFFF",
+							"targetName": "ECM",
+							"compatabiltyId": "FFFFFFFF",
+							"rollbackId": "0",
+							"productIntent": "FFFFFFFF"
+						},
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"N4SWIL01_PCM.s19",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"E00000",
+							"Stop":"FFFFFF"
+						}
+						]
+					}
+				}
+				],
+				"Properties":"None",
+				"Add Scripts": [
+					{
+					"ScriptType": "Prescript",
+					"ScriptName": "FMS_General_PreScript_DisplayWarningDevelopmentEcu.js"
+					}
+				],
+				"Replace Scripts": "None",
+				"WholeFlashChecksum":"None"
+			}
+		},
+		{
+			"Name":"PLGM",
+			"ID": "PLGM_CUSW",
+			"Variant":"61",
+			"Supplier":"Flextronics",
+			"SupplierID": "00CA",
+			"Class":"EB2_Test",
+			"Unlock":"S1_PLGM_CUSW_Sup00CA_Var61_AlgID02A1_V01.esu",
+			"SDD": "TFO 09009 + CUSW Addendum",
+			"Template":{
+				"Req_ID":"18da41f1",
+				"Res_ID":"18daf141",
+				"Alt_Req_ID": "None",
+				"Alt_Res_ID": "None",
+				"BusType":"CAN-BH 29bit",
+				"Protocol":"CS.00051",
+				"FlashProcess":"CS.00053 (FIAT/CUSW)",
+				"Checksum":"Constant",
+				"LogicalBlocks":[
+					{
+					"LB1":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "None",
+						"SWIL": "None",
+						"Checksum": "None",
+						"PhysicalBlocks":[{
+							"Start":"00c0c000",
+							"Stop":"00cbffff"
+						}
+						]
+					}
+				}
+				],
+				"Properties":{
+					"erase.address.start.0":"12632064",
+					"erase.address.end.0 ":"13369343"
+				},
+				"Add Scripts": [
+					{
+						"ScriptType": "Prescript",
+						"ScriptName": "FMS_General_PreScript_DisplayWarningDevelopmentEcu.js"
+					}
+				],
+				"Replace Scripts": "None",
+				"WholeFlashChecksum":"50B2"
+			}			
+
+		},
+		{
+			"Name":"ESL",
+			"ID": "ESL_FGA",
+			"Variant":"90",
+			"Supplier":"TRW",
+			"SupplierID": "005D",
+			"Class":"EB2_Test",
+			"Unlock":"S1_ESL_FGA_Sup005D_V01.esu",
+			"SDD": "TFO 09009-02 NEXTGEN (w/o Autosar)",
+			"Template":{
+				"Req_ID":"18dac4f1",
+				"Res_ID":"18daf1c4",
+				"Alt_Req_ID": "None",
+				"Alt_Res_ID": "None",
+				"BusType":"CAN-CH 29bit",
+				"Protocol":"CS.00051",
+				"FlashProcess":"CS.00053 (FIAT/CUSW)",
+				"Checksum":"Constant",
+				"LogicalBlocks":[
+					{
+					"LB1":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "None",
+						"SWIL": "None",
+						"Checksum":"None",
+						"PhysicalBlocks":[{
+							"Start":"00100000",
+							"Stop":"00103fff"
+						}
+						]
+					},
+					"LB2": {
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "None",
+						"SWIL": "None",
+						"Checksum": "None",
+						"PhysicalBlocks":[{
+							"Start":"00104c00",
+							"Stop":"00107fff"
+						}
+						]
+					},
+					"LB3": {
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "None",
+						"SWIL": "None",
+						"Checksum": "None",
+						"PhysicalBlocks":[{
+							"Start":"00108000",
+							"Stop":"0010bfff"
+						}
+						]
+					},
+					"LB4": {
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "None",
+						"SWIL": "None",
+						"Checksum": "None",
+						"PhysicalBlocks":[{
+							"Start":"00110000",
+							"Stop":"00113fff"
+						}
+						]
+					},
+					"LB5": {
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "None",
+						"SWIL": "None",
+						"Checksum": "None",
+						"PhysicalBlocks":[{
+							"Start":"00114000",
+							"Stop":"00117fff"
+						}
+						]
+					}
+				}
+				],
+				"Properties":"None",
+				"Add Scripts": [
+					{
+					"ScriptType": "Prescript",
+					"ScriptName": "FMS_General_PreScript_DisplayWarningDevelopmentEcu.js"
+					}
+				],
+				"Replace Scripts": [
+					{
+					"ScriptType": "Pre Flash Process Script",
+					"ScriptName": "FMS_General_PreFlashProcessScript_OnlyDisableNormalBroadcastForCuswVehicles.js"
+					},
+					{
+					"ScriptType": "Post Flash Process Script",
+					"ScriptName": "FMS_General_PostFlashProcessScript_OnlyDisableNormalBroadcastForCuswVehicles.js"
+					}
+				],
+				"WholeFlashChecksum":"7888"
+			}
+		},
+		{
+			"Name":"PCM",
+			"ID": "PCM",
+			"Variant":"7E",
+			"Supplier":"Motorola",
+			"SupplierID": "0036",
+			"Class":"EB2_Test",
+			"Unlock":"S5_PCM_Sup0036_Var7E_AlgID0173_V02.esu",
+			"SDD": "KWP 2.3.2",
+			"Template":{
+				"Req_ID":"18da10f1",
+				"Res_ID":"18daf110",
+				"Alt_Req_ID": "None",
+				"Alt_Res_ID": "None",
+				"BusType":"CAN-C 29bit",
+				"Protocol":"KWP-2000",
+				"FlashProcess":"Chrysler",
+				"Checksum":"None",
+				"LogicalBlocks":[
+					{
+					"LB1":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"Hash, RIPEMD-160",
+						"Update Control Type": "Hash, RIPEMD-160 with Addressing",
+						"SWIL": {
+							"Filename":"N4SWIL01.s19",
+							"Checksum": "None"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"00040000",
+							"Stop":"002fffff"
+						}
+						]
+					},
+					"LB2":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"Hash, RIPEMD-160",
+						"Update Control Type": "Hash, RIPEMD-160 with Addressing",
+						"SWIL": {
+							"Filename":"N4SWIL01.s19",
+							"Checksum": "None"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"00300000",
+							"Stop":"003fffff"
+						}
+						]
+					}
+				}
+				],
+				"Properties":"None",
+				"Add Scripts": [
+					{
+						"ScriptType": "Prescript",
+						"ScriptName": "FMS_General_PreScript_DisplayWarningDevelopmentEcu.js"
+					}
+				],
+				"Replace Scripts": [
+					{
+						"ScriptType": "Pre Flash Process Script",
+						"ScriptName": "FMS_General_PreFlashProcessScript_AlertUserCycleIgnitionAfterReset.js"
+					},
+					{
+						"ScriptType": "Post Flash Process Script",
+						"ScriptName": "FMS_General_PostFlashProcessScript_AlertUserCycleIgnitionAfterReset.js"
+					}
+				],
+				"WholeFlashChecksum":"None"
+			}
+		},
+		{
+			"Name":"CADM",
+			"ID": "CADM",
+			"Variant":"0001",
+			"Supplier":"Aptiv",
+			"SupplierID": "00F4",
+			"Class":"EB2_Test",
+			"Unlock":"S1_CADM_Sup00F4_Var0001_AlgID034B_V01.esu",
+			"SDD": "CS.00102",
+			"Template":{
+				"Req_ID":"18da2ef1",
+				"Res_ID":"18daf12e",
+				"Alt_Req_ID": "18da2ef2",
+				"Alt_Res_ID":"18daf22e",
+				"BusType":"CAN-FD-C 29bit",
+				"Protocol":"CS.00100",
+				"FlashProcess":"CS.00101 (NEXTGEN +2)",
+				"Checksum":"None",
+				"LogicalBlocks":[
+					{
+					"LB1":{
+						"Type": "Boot",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"0",
+							"Stop":"0"
+						}
+						]
+					},
+					"LB2":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"0",
+							"Stop":"0"
+						}
+						]
+					},
+					"LB3":{
+						"Type": "Data",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"00fe0000",
+							"Stop":"00feffff"
+						}
+						]
+					},
+					"LB4":{
+						"Type": "Data",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"00ff0000",
+							"Stop":"00ffffff"
+						}
+						]
+					},
+					"LB5":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"01000000",
+							"Stop":"0117ffff"
+						}
+						]
+					},
+					"LB6":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"0",
+							"Stop":"0"
+						}
+						]
+					},
+					"LB7":{
+						"Type": "Data",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"10fe0000",
+							"Stop":"10feffff"
+						}
+						]
+					},
+					"LB8":{
+						"Type": "Data",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"10ff0000",
+							"Stop":"10ffffff"
+						}
+						]
+					},
+					"LB9":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"11000000",
+							"Stop":"1117ffff"
+						}
+						]
+					},
+					"LB10":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"0",
+							"Stop":"0"
+						}
+						]
+					},
+					"LB11":{
+						"Type": "Data",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"20fe0000",
+							"Stop":"20feffff"
+						}
+						]
+					},
+					"LB12":{
+						"Type": "Data",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"20ff0000",
+							"Stop":"20ffffff"
+						}
+						]
+					},
+					"LB13":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"21000000",
+							"Stop":"2117ffff"
+						}
+						]
+					},
+					"LB14":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"0",
+							"Stop":"0"
+						}
+						]
+					},
+					"LB15":{
+						"Type": "Data",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"30fe0000",
+							"Stop":"30feffff"
+						}
+						]
+					},
+					"LB16":{
+						"Type": "Data",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"30ff0000",
+							"Stop":"30ffffff"
+						}
+						]
+					},
+					"LB17":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"31000000",
+							"Stop":"3117ffff"
+						}
+						]
+					},
+					"LB18":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"0",
+							"Stop":"0"
+						}
+						]
+					},
+					"LB19":{
+						"Type": "Data",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"40fe0000",
+							"Stop":"40feffff"
+						}
+						]
+					},
+					"LB20":{
+						"Type": "Data",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"40ff0000",
+							"Stop":"40ffffff"
+						}
+						]
+					},
+					"LB21":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"41000000",
+							"Stop":"4117ffff"
+						}
+						]
+					},
+					"LB22":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"50000000",
+							"Stop":"5017ffff"
+						}
+						]
+					},
+					"LB23":{
+						"Type": "Data",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"50180000",
+							"Stop":"501fffff"
+						}
+						]
+					},
+					"LB24":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"50200000",
+							"Stop":"53dfffff"
+						}
+						]
+					},
+					"LB25":{
+						"Type": "Data",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"a00d0000",
+							"Stop":"a00d3fff"
+						}
+						]
+					},
+					"LB26":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"a00d4000",
+							"Stop":"a02fffff"
+						}
+						]
+					},
+					"LB27":{
+						"Type": "Data",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"a0300000",
+							"Stop":"a0303fff"
+						}
+						]
+					},
+					"LB28":{
+						"Type": "Data",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"a0304000",
+							"Stop":"a032ffff"
+						}
+						]
+					},
+					"LB29":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"a0330000",
+							"Stop":"a05fffff"
+						}
+						]
+					},
+					"LB30":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, SHA-256 without Addressing",
+						"SWIL": {
+							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
+							"Checksum": "CRC32"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"a0c00000",
+							"Stop":"a0cfffff"
+						}
+						]
+					}
+				}
+				],
+				"Properties":"None",
+				"Add Scripts": [
+					{
+					"ScriptType": "Prescript",
+					"ScriptName": "FMS_General_PreScript_DisplayWarningDevelopmentEcu.js"
+					}
+				],
+				"Replace Scripts": "None",
+				"WholeFlashChecksum":"None"
+			}
+		}
+		]
+}
