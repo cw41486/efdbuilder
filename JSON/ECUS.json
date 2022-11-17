@@ -1,6 +1,96 @@
 {
 	"ECU":[
 		{
+			"Name":"IPC",
+			"ID": "IPC_PN",
+			"Variant":"4A",
+			"Supplier":"Nippon",
+			"SupplierID": "0087",
+			"Class":"EB2_Test",
+			"Unlock":"S5_IPC_PN_Sup0087_Var4A_AlgID028C_V01.esu",
+			"SDD": "sd11471-D",
+			"Template":{
+				"Req_ID":"742",
+				"Res_ID":"4C2",
+				"Alt_Req_ID":"",
+				"Alt_Res_ID":"",
+				"BusType":"CAN-C",
+				"Protocol":"UDS-B/C",
+				"FlashProcess":"Chrysler",
+				"Checksum":"None",
+				"LogicalBlocks":[
+					{
+					"LB1":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, RIPEMD-160 with Addressing",
+						"Stripped":false,
+						"SWIL": {
+								"Filename": "flashdrv_v850_3524.s19",
+								"Checksum": "CRC32",
+								"Value": ""
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"00010000",
+							"Stop":"00010fff"
+						}
+						]
+					},
+						"LB2":{
+						"Type": "Code",
+						"CompressionMode":"None",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, RIPEMD-160 with Addressing",
+						"Stripped":false,
+						"SWIL": {
+								"Filename": "flashdrv_v850_3524.s19",
+								"Checksum": "CRC32",
+								"Value": ""
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"00011000",
+							"Stop":"000fffff"
+						}
+						]
+					},
+						"LB3":{
+						"Type": "Code",
+						"CompressionMode":"1",
+						"EncryptionMode": "None",
+						"Signature":"None",
+						"Update Control Type": "Hash, RIPEMD-160 with Addressing",
+						"Stripped":false,
+						"SWIL": {
+								"Filename": "flashdrv_v850_3524.s19",
+								"Checksum": "Constant",
+								"Value": "C3AB1784"
+						},
+						"Checksum": "CRC32",
+						"PhysicalBlocks":[{
+							"Start":"80040000",
+							"Stop":"803fffff"
+						}
+						]
+					}
+				}
+				],
+				"Properties":"None",
+				"Add Scripts": [
+					{
+					"ScriptType": "Prescript",
+					"ScriptName": "FMS_General_PreScript_DisplayWarningDevelopmentEcu.js"
+					}
+				],
+				"Replace Scripts": "None",
+				"WholeFlashChecksum":"None"
+			}
+		},
+		{
 			"Name":"PAM",
 			"ID": "PAM",
 			"Variant":"0002",
