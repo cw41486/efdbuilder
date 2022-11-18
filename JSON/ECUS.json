@@ -566,11 +566,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"0",
@@ -583,11 +580,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"0",
@@ -600,11 +594,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL":"None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"00fe0000",
@@ -617,11 +608,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"00ff0000",
@@ -634,11 +622,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"01000000",
@@ -651,11 +636,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"0",
@@ -668,11 +650,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"10fe0000",
@@ -685,11 +664,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"10ff0000",
@@ -702,11 +678,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"11000000",
@@ -719,11 +692,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"0",
@@ -736,11 +706,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"20fe0000",
@@ -753,11 +720,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"20ff0000",
@@ -770,11 +734,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"21000000",
@@ -787,11 +748,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"0",
@@ -804,11 +762,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"30fe0000",
@@ -821,11 +776,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"30ff0000",
@@ -838,11 +790,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"31000000",
@@ -855,11 +804,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"0",
@@ -872,11 +818,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"40fe0000",
@@ -889,11 +832,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"40ff0000",
@@ -906,11 +846,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"41000000",
@@ -923,15 +860,12 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"50000000",
-							"Stop":"5017ffff"
+							"Stop":"53E03FFF"
 						}
 						]
 					},
@@ -940,15 +874,12 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
-							"Start":"50180000",
-							"Stop":"501fffff"
+							"Start":"a00d0000",
+							"Stop":"a00d3fff"
 						}
 						]
 					},
@@ -957,15 +888,12 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
-							"Start":"50200000",
-							"Stop":"53dfffff"
+							"Start":"a00d4000",
+							"Stop":"a02fffff"
 						}
 						]
 					},
@@ -974,45 +902,8 @@
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
-						"Checksum": "CRC32",
-						"PhysicalBlocks":[{
-							"Start":"a00d0000",
-							"Stop":"a00d3fff"
-						}
-						]
-					},
-					"LB26":{
-						"Type": "Code",
-						"CompressionMode":"None",
-						"EncryptionMode": "None",
-						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
-						"Checksum": "CRC32",
-						"PhysicalBlocks":[{
-							"Start":"a00d4000",
-							"Stop":"a02fffff"
-						}
-						]
-					},
-					"LB27":{
-						"Type": "Data",
-						"CompressionMode":"None",
-						"EncryptionMode": "None",
-						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"a0300000",
@@ -1020,16 +911,13 @@
 						}
 						]
 					},
-					"LB28":{
+					"LB26":{
 						"Type": "Data",
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"a0304000",
@@ -1037,16 +925,13 @@
 						}
 						]
 					},
-					"LB29":{
+					"LB27":{
 						"Type": "Code",
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"a0330000",
@@ -1054,16 +939,13 @@
 						}
 						]
 					},
-					"LB30":{
+					"LB28":{
 						"Type": "Code",
 						"CompressionMode":"None",
 						"EncryptionMode": "None",
 						"Signature":"None",
-						"Update Control Type": "Hash, SHA-256 without Addressing",
-						"SWIL": {
-							"Filename":"SWIL_(Erase_Prog)_Rev_1.hex",
-							"Checksum": "CRC32"
-						},
+						"Update Control Type": "Hash, Manual",
+						"SWIL": "None",
 						"Checksum": "CRC32",
 						"PhysicalBlocks":[{
 							"Start":"a0c00000",
