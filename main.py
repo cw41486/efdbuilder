@@ -8,6 +8,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.alert import Alert
 from selenium.common.exceptions import UnexpectedAlertPresentException
+from selenium.common.exceptions import NoAlertPresentException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from tkinter import *
@@ -24,7 +25,6 @@ failures = []
 
 #   Load JSON file data
 
-#ecu_json = open('JSON/ECUS.json','r')
 with open('JSON/ECUS.json','r') as ecu_json:
     ecu_data = json.load(ecu_json)
 
@@ -36,14 +36,13 @@ options.add_experimental_option("prefs",prefs)
 
 
 #   Authenticaion
-efdBuilder = 'https://stage.fca-tools.com/workbench/index.php/utilities-efd-test/'
 username = ''
 password = ''
 utility_passkey = 'INt3rn@lF1a5HT3stingEFD'
 skipTest = ""
 environment = 'eb2Template'
-
-
+efdBuilder = 'https://stage.fca-tools.com/workbench/index.php/utilities-efd-test/'
+templateEnv = 'tpl'
 
 
 def infoWindow(title, message):
@@ -78,19 +77,25 @@ def UserInputWindow():
         l = Label(root,text=f'Stage selected')
         l.grid(row=4,column=1,pady=10)
         global environment
+        global templateEnv
         environment = 'eb2Stage'
+        templateEnv = 'stg'
 
     def assignTemplate(*args):
         l = Label(root, text=f'Template selected')
         l.grid(row=4, column=1, pady=10)
         global environment
+        global templateEnv
         environment = 'eb2Template'
+        templateEnv = 'tpl'
 
     def assignDev(*args):
         l = Label(root, text=f'Dev selected')
         l.grid(row=4, column=1, pady=10)
         global environment
+        global templateEnv
         environment = 'efdBuilder2Dev'
+        templateEnv = 'dev'
 
 
     L1 = Label(root, text='Username', background='blue', foreground='yellow')
@@ -135,27 +140,44 @@ def log(x):
 
 UserInputWindow()
 driver = webdriver.Chrome('driver/chromedriver.exe', chrome_options=options)
+alert = Alert(driver)
 driver.maximize_window()
 
 try:
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     #UserInputWindow()
     #driver = webdriver.Chrome('driver/chromedriver.exe', chrome_options=options)
     #driver.maximize_window()
-    act = ActionChains(driver)      #   Action element.
-    log(f'{environment} environment selected.')
-    driver.get(efdBuilder)
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID,'pwbox-6589')))
-    driver.find_element(By.ID,'pwbox-6589').send_keys(utility_passkey)
-    driver.find_element(By.XPATH,'//*[@id="page-6589"]/div/form/p[2]/input').click()
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH,f'//*[@id="{environment}"]/div/figure/a/img')))
-    time.sleep(3)
-    driver.find_element(By.XPATH,f'//*[@id="{environment}"]/div/figure/a/img').click()
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="ui-id-2"]')))
-    time.sleep(3)
-    driver.find_element(By.ID,f'auth-username-{environment}').send_keys(username)
-    driver.find_element(By.ID,f'auth-password-{environment}').send_keys(password)
-    driver.find_element(By.XPATH,'//span[contains(text(),"Login")]').click()
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'ft-identifiers')))
+#    act = ActionChains(driver)      #   Action element.
+#    log(f'{environment} environment selected.')
+#    driver.get(efdBuilder)
+#    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID,'pwbox-6589')))
+#    driver.find_element(By.ID,'pwbox-6589').send_keys(utility_passkey)
+#    driver.find_element(By.XPATH,'//*[@id="page-6589"]/div/form/p[2]/input').click()
+#    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH,f'//*[@id="{environment}"]/div/figure/a/img')))
+#    time.sleep(3)
+#    driver.find_element(By.XPATH,f'//*[@id="{environment}"]/div/figure/a/img').click()
+#    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="ui-id-2"]')))
+#    time.sleep(3)
+#    driver.find_element(By.ID,f'auth-username-{environment}').send_keys(username)
+#    driver.find_element(By.ID,f'auth-password-{environment}').send_keys(password)
+#    driver.find_element(By.XPATH,'//span[contains(text(),"Login")]').click()
+#    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'ft-identifiers')))
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#       Above this line is the orginal code.  Below we are testing a different login process.
+#
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    builderUrl = f'https://eb2-{templateEnv}.fcaflash.com/auth'
+    act = ActionChains(driver)
+    driver.get(builderUrl)
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID,'u')))
+    driver.find_element(By.ID,'u').send_keys(username)
+    driver.find_element(By.ID,'p').send_keys(password)
+    driver.find_element(By.XPATH,'//button[@type="submit"]').click()
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME,'app-version')))
+
     EB2_version = driver.find_element(By.CLASS_NAME,'app-version').text
     # currentVersion = ""
     with open('JSON/builderVersion.json','r') as eb2Version:
@@ -167,6 +189,7 @@ try:
     else:
         previousVersion = currentVersion["Version"]
         currentVersion["Version"] = EB2_version
+        attempts = 0
 
     # log(f"Current Version of EB2: {EB2_version}")
         time.sleep(5)
@@ -174,6 +197,7 @@ try:
 
         #   Start to Create Template.  Loop through all ECUs.
         for ecu in ecu_data['ECU']:
+            driver.get(builderUrl)
             WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//a[contains(text(),"Create Template")]')))
             driver.find_element(By.XPATH, '//a[contains(text(),"Create Template")]').click()
             log("Clicked on 'Create Template'")
@@ -323,7 +347,9 @@ try:
                     index = 1
                     for compression in elems:
                         if (ranges[f"LB{index}"]["CompressionMode"] != "None"):
-                            pass
+                            elem = compression
+                            elem.click()
+                            elem.send_keys(ranges[f"LB{index}"]["CompressionMode"])
                         index += 1
                     log('Compression modes added successfully.')
 
@@ -339,7 +365,6 @@ try:
                     log('Encryption modes added successfully.')
 
                 #   Signature Type
-                #   TODO:   Add signature type selection
                     try:
                         elems = driver.find_elements(By.XPATH, '//label[@form-key="Signature"]/select')
                         index = 1
@@ -564,6 +589,19 @@ try:
                         elem.click()
                         newElem = elem.find_element(By.XPATH, f'./option[contains(text(),"{ranges[f"LB{index}"]["SWIL"]["Checksum"]}")]')
                         newElem.click()
+                        index += 1
+
+                    #  SWIl constant checksum calc only.
+                    index = 1
+                    elems = driver.find_elements(By.XPATH,'//div[@class="tab-tree-padding SWIL1"]/app-object-field/app-main-content-customizable-tab/div/div/div/app-form-binary')
+                    log(f'Found {len(elems)} SWIL binaries')
+                    for binaries in elems:
+                        act.move_to_element(binaries)
+                        if (ranges[f"LB{index}"]["SWIL"]["Checksum"] == "Constant"):
+                            elem = binaries.find_element(By.XPATH,'./div/textarea')
+                            elem.send_keys(ranges[f"LB{index}"]["SWIL"]["Value"])
+
+                        index += 1
 
                     log('SWIL added successfully.')
 
@@ -775,15 +813,27 @@ try:
                 elem.click()
                 time.sleep(3)
 
+
+
             except UnexpectedAlertPresentException:
                 driver.save_screenshot(f'./screenshots/Alert_Window_appeared_{datetime.today().strftime("%m %d %Y")}.png')
-                alert = Alert(driver)
-                alert.accept()
+                time.sleep(3)
+                driver.switch_to.alert.accept()
+
+            attempts += 1
 
             #   Go back to ECU Templates
-            elem = driver.find_element(By.XPATH, '//a[contains(@href,"/flash-templates")]')
-            act.move_to_element(elem)
-            elem.click()
+
+#            try:
+#                elem = driver.find_element(By.XPATH, '//a[contains(@href,"/flash-templates")]')
+#                act.move_to_element(elem)
+ #               elem.click()
+ #               time.sleep(1)
+#
+ #           except UnexpectedAlertPresentException:
+ #               driver.save_screenshot(f'./screenshots/Alert_Window_appeared_{datetime.today().strftime("%m %d %Y")}.png')
+ #               time.sleep(1)
+ #               driver.switch_to.alert.accept()
 
         with open('JSON/builderVersion.json', 'w') as eb2Version:
             json.dump(currentVersion, eb2Version)
@@ -794,8 +844,9 @@ try:
 except UnexpectedAlertPresentException:
 
     driver.save_screenshot(f'./screenshots/Alert_Window_appeared_{datetime.today().strftime("%m %d %Y")}.png')
-    alert = Alert(driver)
+    time.sleep(1)
     alert.accept()
+
 
 except:
     print("Error detected")
